@@ -152,6 +152,11 @@ var Engine = (function(global) {
         });
 
         player.render();
+        ctx.fillStyle = "white";
+        ctx.font="30px Arial";
+        ctx.fillText("你才"+player.level+"级", 20,500);
+        ctx.fillText("你的最高纪录是"+player.max+"级", 20,530);
+
     }
 
     /* This function does nothing but it could have been a good place to
